@@ -9,13 +9,11 @@
 #include "GPIO_Private.h"
 #include "GPIO_Config.h"
 
-
 //*****************************************************************************
 //
 // PORT DRIVER PROTOTYPES
 //
 //*****************************************************************************
-
 void Port_Init(const Port_ConfigType* ConfigPtr);
 void DIO_WritePort(DIO_PortType Port_ID,DIO_PortLevelType Level);
 DIO_PortLevelType DIO_ReadPort(DIO_PortType Port_ID);

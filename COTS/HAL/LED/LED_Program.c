@@ -145,7 +145,7 @@ void LED_Toggle(void)
 	else if (Counter>TotalCount)
 	{
 		Counter=0;
-	}else if(Counter!=0 && Counter>Global_ONTime)
+	}else if(Counter>Global_ONTime)
 	{
 		DIO_WriteChannel(PF2,LOW);
 	}

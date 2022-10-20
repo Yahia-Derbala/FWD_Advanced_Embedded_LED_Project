@@ -20,6 +20,6 @@ void LED_Init(LED_ControlType LED_Controls,void (*LED_Toggle) (void) ,LED_TimerT
 void LED_Blink(uint16_t On_Time, uint16_t Off_Time,LED_TimerType	LED_Timer);
 void LED_IncreaseON(void);
 void LED_IncreaseOFF(void);
-void LED_InitControls(DIO_ChannelType SW1,DIO_ChannelType SW2);
+void LED_Toggle(void);
 
 #endif /*LED_INTERFACE_H */

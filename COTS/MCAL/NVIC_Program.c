@@ -67,10 +67,6 @@ void NVIC_EnableINT(NVIC_Int_CfgType NVIC_IntConfig)
 	EN_Bit_Offset=NVIC_IntConfig.INT_Number%32;
 	/* Enable interrupt */ 
 	Set_Bit(EN_Reg,EN_Bit_Offset);
-	if(NVIC_IntConfig.INT_Number!=NVIC_SysTick)
-	{
-		
-	}
 }
 
 void NVIC_DisableINT(NVIC_Int_CfgType NVIC_IntConfig)
